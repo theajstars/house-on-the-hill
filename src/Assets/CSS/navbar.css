@@ -17,3 +17,14 @@ a {
 .nav-item a {
   color: #fcfcfc;
 }
+@media screen and (max-width: 550px) {
+  div.nav {
+    flex-direction: column;
+    margin: 0px;
+    right: 20px;
+    left: unset;
+    width: fit-content;
+    height: 100px;
+    top: 20px;
+  }
+}

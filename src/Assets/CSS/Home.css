@@ -45,7 +45,7 @@
 }
 .jumbo-btn {
   width: 100%;
-  padding: 12px;
+  padding: 10px;
   box-sizing: border-box;
   text-align: center;
   font-size: 20px;
@@ -141,6 +141,7 @@
   height: 280px;
   box-sizing: border-box;
   width: 280px;
+  margin-bottom: 20px;
 }
 .avatar {
   border-radius: 50%;
@@ -158,15 +159,128 @@
   color: rgba(51, 16, 68, 0.66);
   font-weight: bold;
 }
+.our-services {
+  padding: 60px 0px;
+}
+.service-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 60px;
+}
+.service-card-container-left {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 40px 0px;
+}
+.service-card-container-right {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 40px 0px;
+}
+.service-card {
+  width: 600px;
+  height: 290px;
+  display: flex;
+  background: #ffffff;
+}
+.service-card-img {
+  width: 60%;
+  height: 100%;
+  object-fit: cover;
+}
+.service-card-right-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  padding: 35px 5%;
+  box-sizing: border-box;
+}
+.service-card-right {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.service-card-header {
+  font-weight: bold;
+  font-size: 2.3rem;
+
+  color: #331044;
+}
+.service-time {
+  font-weight: 700;
+  font-size: 2.7rem;
+  color: #1d1c1c;
+}
+.service-card-text {
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+}
+.card-col {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+}
+@media screen and (max-width: 1050px) {
+  div.team-row-container {
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 800px) {
   div.home-jumbo {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 500px;
+    margin-top: -250px;
+    top: 50%;
   }
   div.home-flex {
     flex-direction: column;
     align-items: flex-start;
-    height: 480px;
+    height: 400px;
+  }
+  span.left-header {
+    font-size: 40px;
+  }
+  span.next-month {
+    font-size: 30px;
+  }
+  span.next-day {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 660px) {
+  div.service-card {
+    width: 100%;
+    height: 650px;
+    flex-direction: column;
+  }
+  img.service-card-img {
+    width: 100%;
+  }
+  div.service-card-right-container {
+    width: 90%;
+  }
+  div.service-card-right {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+@media screen and (max-width: 500px) {
+  div.team-row {
+    flex-direction: column;
   }
 }

@@ -6,6 +6,10 @@ import WomanAvatar from "../Assets/IMG/Avatars/woman-avatar.jpg";
 import WomanAvatar2 from "../Assets/IMG/Avatars/woman-avatar-2.jpg";
 import MeAvatar from "../Assets/IMG/Avatars/me.png";
 
+import SundayServiceImage from "../Assets/IMG/raised-hands.jpg";
+import BibleStudyImage from "../Assets/IMG/reading-bible.jpg";
+import FridayPrayerImage from "../Assets/IMG/pray.jpg";
+
 export default function Home() {
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
@@ -39,9 +43,7 @@ export default function Home() {
           <div className="home-flex">
             <div className="home-left">
               <span className="left-header raleway">
-                House on
-                <br />
-                the hill
+                House on&nbsp; the hill
               </span>
               <div className="btn-purple raleway jumbo-btn">Join us</div>
             </div>
@@ -94,11 +96,9 @@ export default function Home() {
           <div className="team">
             <div className="teammate">
               <img src={MeAvatar} alt="" className="avatar" />
-              <span className="teammate-name raleway">Dr AJ Braavo</span>
+              <span className="teammate-name raleway">Dr AJ. Braavo</span>
               <span className="team-position raleway">Pastor in charge</span>
             </div>
-            <br />
-            <br />
             <div className="team-row-container">
               <div className="team-row">
                 <div className="teammate">
@@ -130,6 +130,98 @@ export default function Home() {
                   <img src={ManAvatar2} alt="" className="avatar" />
                   <span className="teammate-name raleway">GB stikkkks</span>
                   <span className="team-position raleway">Drummer boy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="our-services">
+          <center>
+            <span className="purple-head raleway">Our Services</span>
+          </center>
+          <div className="service-cards">
+            <div className="service-card-container-left">
+              <div className="service-card">
+                <img
+                  src={SundayServiceImage}
+                  alt=""
+                  className="service-card-img"
+                />
+                <div className="service-card-right-container">
+                  <div className="service-card-right">
+                    <div className="card-col">
+                      <span className="service-card-header raleway">
+                        Sundays
+                      </span>
+                      <span className="service-time roboto">
+                        <span style={{ fontSize: "1.3rem" }}>
+                          <i className="fas fa-clock"></i>&nbsp;
+                        </span>
+                        10:30
+                      </span>
+                    </div>
+                    <p className="service-card-text jost">
+                      Join us every sunday morning by 10:30 as we worship the
+                      Lord.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="service-card-container-right">
+              <div className="service-card">
+                <img
+                  src={BibleStudyImage}
+                  alt=""
+                  className="service-card-img"
+                />
+                <div className="service-card-right-container">
+                  <div className="service-card-right">
+                    <div className="card-col">
+                      <span className="service-card-header raleway">
+                        Tuesdays
+                      </span>
+                      <span className="service-time roboto">
+                        <span style={{ fontSize: "1.3rem" }}>
+                          <i className="fas fa-clock"></i>&nbsp;
+                        </span>
+                        06:45
+                      </span>
+                    </div>
+                    <p className="service-card-text jost">
+                      Every tuesday evening, join our Bible discussion session
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="service-card-container-left">
+              <div className="service-card">
+                <img
+                  src={FridayPrayerImage}
+                  alt=""
+                  className="service-card-img"
+                />
+                <div className="service-card-right-container">
+                  <div className="service-card-right">
+                    <div className="card-col">
+                      <span className="service-card-header raleway">
+                        Fridays
+                      </span>
+                      <span className="service-time roboto">
+                        <span style={{ fontSize: "1.3rem" }}>
+                          <i className="fas fa-clock"></i>&nbsp;
+                        </span>
+                        04:00
+                      </span>
+                    </div>
+                    <p className="service-card-text jost">
+                      On Fridays, we engage a prayer session with communion
+                      afterwards
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
