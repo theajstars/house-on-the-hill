@@ -1,6 +1,9 @@
 @import url("./Home.css");
 @import url("./fonts.css");
 @import url("./navbar.css");
+body {
+  overflow-x: hidden;
+}
 .btn-purple {
   background: rgba(109, 32, 146, 0.85);
   border-radius: 10px;
@@ -8,4 +11,9 @@
 }
 .btn-purple:hover {
   background: rgb(63, 14, 87);
+}
+.purple-head {
+  font-weight: bold;
+  font-size: 40px;
+  color: #411357;
 }

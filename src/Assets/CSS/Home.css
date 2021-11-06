@@ -25,7 +25,7 @@
   position: absolute;
   height: 400px;
   margin-top: -200px;
-  top: 40%;
+  top: 30%;
   width: 90%;
   left: 50%;
   margin-left: -45%;
@@ -57,6 +57,9 @@
 .home-right {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 230px;
+  /* background-color: red; */
 }
 .next-day {
   font-weight: bold;
@@ -93,4 +96,77 @@
 .countdown-dot {
   color: #fcfcfc;
   font-size: 10px;
+}
+.home-scripture {
+  font-size: 17px;
+  text-align: center;
+  color: #fcfcfc;
+  position: absolute;
+  bottom: 20px;
+  width: 84vw;
+  margin-left: -42vw;
+  left: 50%;
+}
+.meet-the-team {
+  margin-top: 100vh;
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 60px 0px;
+}
+.team {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.team-row-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.team-row {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.teammate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 280px;
+  box-sizing: border-box;
+  width: 280px;
+}
+.avatar {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+.teammate-name {
+  font-weight: bold;
+  font-size: 25px;
+
+  color: #1d1c1c;
+}
+.team-position {
+  font-size: 13px;
+  color: rgba(51, 16, 68, 0.66);
+  font-weight: bold;
+}
+@media screen and (max-width: 800px) {
+  div.home-jumbo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  div.home-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 480px;
+  }
 }

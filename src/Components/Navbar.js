@@ -8,10 +8,10 @@ export default function Navbar() {
         <Link to="/">Home</Link>
       </div>
       <div className="nav-item raleway">
-        <Link to="/">Kids</Link>
+        <Link to="/kids">Kids</Link>
       </div>
       <div className="nav-item raleway">
-        <Link to="/">Kingdom donations</Link>
+        <Link to="/donate">Kingdom donations</Link>
       </div>
     </div>
   );
