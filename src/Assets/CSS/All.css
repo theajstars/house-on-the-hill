@@ -1,0 +1,11 @@
+@import url("./Home.css");
+@import url("./fonts.css");
+@import url("./navbar.css");
+.btn-purple {
+  background: rgba(109, 32, 146, 0.85);
+  border-radius: 10px;
+  transition: 0.12s;
+}
+.btn-purple:hover {
+  background: rgb(63, 14, 87);
+}

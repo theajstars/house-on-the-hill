@@ -1,0 +1,16 @@
+/* Raleway */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.raleway {
+  font-family: "Raleway", sans-serif;
+}
+
+/* Jost */
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.jost {
+  font-family: "Jost", sans-serif;
+}
+/* Roboto Mono */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+.roboto {
+  font-family: "Roboto Mono", monospace;
+}
