@@ -1,0 +1,51 @@
+@media screen and (max-width: 1050px) {
+  div.team-row-container {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 800px) {
+  div.home-jumbo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    margin-top: -250px;
+    top: 50%;
+  }
+  div.home-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 400px;
+  }
+  span.left-header {
+    font-size: 40px;
+  }
+  span.next-month {
+    font-size: 30px;
+  }
+  span.next-day {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 660px) {
+  div.service-card {
+    width: 100%;
+    height: 650px;
+    flex-direction: column;
+  }
+  img.service-card-img {
+    width: 100%;
+  }
+  div.service-card-right-container {
+    width: 90%;
+  }
+  div.service-card-right {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+@media screen and (max-width: 500px) {
+  div.team-row {
+    flex-direction: column;
+  }
+}

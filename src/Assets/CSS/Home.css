@@ -1,3 +1,4 @@
+@import url("./small_screens.css");
 .home-top {
   height: 100vh;
   width: 100vw;
@@ -235,54 +236,52 @@
   width: 100%;
   align-items: flex-start;
 }
-@media screen and (max-width: 1050px) {
-  div.team-row-container {
-    flex-direction: column;
-  }
+.purple-bg {
+  background-color: #411357;
+  min-height: 400px;
+  width: 100vw;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 100px 0px;
 }
-@media screen and (max-width: 800px) {
-  div.home-jumbo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 500px;
-    margin-top: -250px;
-    top: 50%;
-  }
-  div.home-flex {
-    flex-direction: column;
-    align-items: flex-start;
-    height: 400px;
-  }
-  span.left-header {
-    font-size: 40px;
-  }
-  span.next-month {
-    font-size: 30px;
-  }
-  span.next-day {
-    font-size: 20px;
-  }
+.form-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
 }
-@media screen and (max-width: 660px) {
-  div.service-card {
-    width: 100%;
-    height: 650px;
-    flex-direction: column;
-  }
-  img.service-card-img {
-    width: 100%;
-  }
-  div.service-card-right-container {
-    width: 90%;
-  }
-  div.service-card-right {
-    flex-direction: row;
-    align-items: flex-end;
-  }
+.touch-form {
+  display: flex;
+  flex-direction: column;
 }
-@media screen and (max-width: 500px) {
-  div.team-row {
-    flex-direction: column;
-  }
+.touch-input {
+  margin-bottom: 30px;
+  width: 300px;
+  box-sizing: border-box;
+  padding: 12px;
+  font-size: 17px;
+  background: #fcfcfc;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  font-weight: 500;
+}
+.touch-input::placeholder {
+  color: rgba(65, 19, 87, 0.63);
+  font-weight: 500;
+}
+textarea.touch-input {
+  height: 140px;
+  resize: none;
+}
+.submit-touch {
+  border: none;
+  outline: none;
+  height: 45px;
+  background: #fcfcfc;
+  border-radius: 20px;
+  font-size: 19px;
+  font-weight: 600;
+  color: #411357;
+  cursor: pointer;
 }

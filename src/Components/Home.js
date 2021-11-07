@@ -1,5 +1,5 @@
 import { Container } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import ManAvatar from "../Assets/IMG/Avatars/man-avatar.jpg";
 import ManAvatar2 from "../Assets/IMG/Avatars/man-avatar-2.jpg";
 import WomanAvatar from "../Assets/IMG/Avatars/woman-avatar.jpg";
@@ -10,7 +10,15 @@ import BibleStudyImage from "../Assets/IMG/reading-bible.jpg";
 import FridayPrayerImage from "../Assets/IMG/pray.jpg";
 import AOS from "aos";
 
+import { ToastProvider, useToasts } from "react-toast-notifications";
+
 export default function Home() {
+  const { addToast } = useToasts();
+
+  const servicesRef = useRef();
+  const scrollToServices = () => {
+    servicesRef.current.scrollIntoView({ behavior: "smooth" });
+  };
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
@@ -39,6 +47,12 @@ export default function Home() {
       setSeconds(secondsBetween > 9 ? secondsBetween : `0${secondsBetween}`);
     }, 1000);
   }, []);
+  const setFormSubmitted = () => {
+    addToast("Your message has been received!", {
+      appearance: "success",
+      autoDismiss: true,
+    });
+  };
   return (
     <>
       <Container maxWidth="lg">
@@ -80,7 +94,10 @@ export default function Home() {
                   <span className="countdown-unit roboto">seconds</span>
                 </span>
               </div>
-              <div className="btn-purple raleway jumbo-btn">
+              <div
+                className="btn-purple raleway jumbo-btn"
+                onClick={scrollToServices}
+              >
                 View all services
               </div>
             </div>
@@ -139,7 +156,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="our-services">
+        <div className="our-services" ref={servicesRef}>
           <center>
             <span className="purple-head raleway">Our Services</span>
           </center>
@@ -232,6 +249,48 @@ export default function Home() {
           </div>
         </div>
       </Container>
+      <center>
+        <span className="purple-head raleway">Get In Touch</span>
+      </center>
+      <br />
+      <br />
+      <br />
+      <div className="purple-bg">
+        <Container maxWidth="md">
+          <div className="form-row">
+            <form
+              action="#"
+              className="touch-form"
+              onSubmit={(e) => {
+                e.preventDefault();
+                setFormSubmitted();
+              }}
+            >
+              <input
+                type="text"
+                className="touch-input raleway"
+                spellCheck="false"
+                placeholder="Name"
+              />
+              <input
+                type="text"
+                className="touch-input raleway"
+                spellCheck="false"
+                placeholder="Email"
+              />
+              <textarea
+                type="text"
+                className="touch-input raleway"
+                placeholder="Email"
+                spellCheck="false"
+              />
+              <button type="submit" className="raleway submit-touch">
+                Submit
+              </button>
+            </form>
+          </div>
+        </Container>
+      </div>
     </>
   );
 }
