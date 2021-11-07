@@ -200,6 +200,8 @@
   width: 40%;
   padding: 35px 5%;
   box-sizing: border-box;
+  box-shadow: 8px 0px 20px -19px #411357;
+  background: rgba(239, 213, 252, 0.3);
 }
 .service-card-right {
   width: 100%;

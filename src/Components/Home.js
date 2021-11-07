@@ -5,10 +5,10 @@ import ManAvatar2 from "../Assets/IMG/Avatars/man-avatar-2.jpg";
 import WomanAvatar from "../Assets/IMG/Avatars/woman-avatar.jpg";
 import WomanAvatar2 from "../Assets/IMG/Avatars/woman-avatar-2.jpg";
 import MeAvatar from "../Assets/IMG/Avatars/me.png";
-
 import SundayServiceImage from "../Assets/IMG/raised-hands.jpg";
 import BibleStudyImage from "../Assets/IMG/reading-bible.jpg";
 import FridayPrayerImage from "../Assets/IMG/pray.jpg";
+import AOS from "aos";
 
 export default function Home() {
   const [days, setDays] = useState(0);
@@ -17,6 +17,9 @@ export default function Home() {
   const [seconds, setSeconds] = useState(0);
 
   useEffect(() => {
+    AOS.init({
+      duration: 1200,
+    });
     setInterval(() => {
       const currentDate = new Date(Date.now());
       const futureDate = new Date(2021, 10, 28, 10, 30);
@@ -99,7 +102,7 @@ export default function Home() {
               <span className="teammate-name raleway">Dr AJ. Braavo</span>
               <span className="team-position raleway">Pastor in charge</span>
             </div>
-            <div className="team-row-container">
+            <div className="team-row-container" data-aos="fade-up">
               <div className="team-row">
                 <div className="teammate">
                   <img src={WomanAvatar} alt="" className="avatar" />
@@ -141,7 +144,7 @@ export default function Home() {
             <span className="purple-head raleway">Our Services</span>
           </center>
           <div className="service-cards">
-            <div className="service-card-container-left">
+            <div className="service-card-container-left" data-aos="fade-right">
               <div className="service-card">
                 <img
                   src={SundayServiceImage}
@@ -169,7 +172,8 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="service-card-container-right">
+
+            <div className="service-card-container-right" data-aos="fade-left">
               <div className="service-card">
                 <img
                   src={BibleStudyImage}
@@ -197,7 +201,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="service-card-container-left">
+            <div className="service-card-container-left" data-aos="fade-right">
               <div className="service-card">
                 <img
                   src={FridayPrayerImage}

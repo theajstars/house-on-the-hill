@@ -3,7 +3,7 @@
 @import url("./navbar.css");
 body {
   overflow-x: hidden;
-  background-color: #ccc;
+  background-color: #fff;
 }
 .btn-purple {
   background: rgba(109, 32, 146, 0.85);
