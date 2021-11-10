@@ -4,6 +4,7 @@
 body {
   overflow-x: hidden;
   background-color: #fff;
+  max-width: 100vw !important;
 }
 .btn-purple {
   background: rgba(109, 32, 146, 0.85);
