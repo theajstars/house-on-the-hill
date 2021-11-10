@@ -8,6 +8,7 @@ import MeAvatar from "../Assets/IMG/Avatars/me.png";
 import SundayServiceImage from "../Assets/IMG/raised-hands.jpg";
 import BibleStudyImage from "../Assets/IMG/reading-bible.jpg";
 import FridayPrayerImage from "../Assets/IMG/pray.jpg";
+import FullChurchLogo from "../Assets/IMG/Church-Logo-full.png";
 import AOS from "aos";
 
 import { ToastProvider, useToasts } from "react-toast-notifications";
@@ -60,7 +61,7 @@ export default function Home() {
           <div className="home-flex">
             <div className="home-left">
               <span className="left-header raleway">
-                House on&nbsp; the hill
+                House on <br /> the hill
               </span>
               <div className="btn-purple raleway jumbo-btn">Join us</div>
             </div>
@@ -176,7 +177,7 @@ export default function Home() {
                       </span>
                       <span className="service-time roboto">
                         <span style={{ fontSize: "1.3rem" }}>
-                          <i className="fas fa-clock"></i>&nbsp;
+                          <i className="fas fa-clock"></i>
                         </span>
                         10:30
                       </span>
@@ -205,7 +206,7 @@ export default function Home() {
                       </span>
                       <span className="service-time roboto">
                         <span style={{ fontSize: "1.3rem" }}>
-                          <i className="fas fa-clock"></i>&nbsp;
+                          <i className="fas fa-clock"></i>
                         </span>
                         06:45
                       </span>
@@ -233,7 +234,7 @@ export default function Home() {
                       </span>
                       <span className="service-time roboto">
                         <span style={{ fontSize: "1.3rem" }}>
-                          <i className="fas fa-clock"></i>&nbsp;
+                          <i className="fas fa-clock"></i>
                         </span>
                         04:00
                       </span>
@@ -249,13 +250,14 @@ export default function Home() {
           </div>
         </div>
       </Container>
-      <center>
-        <span className="purple-head raleway">Get In Touch</span>
-      </center>
-      <br />
-      <br />
-      <br />
       <div className="purple-bg">
+        <center>
+          <span style={{ color: "#fcfcfc" }} className="purple-head raleway">
+            Get In Touch
+          </span>
+        </center>
+        <br />
+        <br />
         <Container maxWidth="md">
           <div className="form-row">
             <form
@@ -281,15 +283,28 @@ export default function Home() {
               <textarea
                 type="text"
                 className="touch-input raleway"
-                placeholder="Email"
+                placeholder="Message"
                 spellCheck="false"
               />
               <button type="submit" className="raleway submit-touch">
                 Submit
               </button>
             </form>
+
+            <div className="form-right">
+              <img src={FullChurchLogo} alt="" />
+              <span className="form-right-caption raleway">
+                House on The Hill
+              </span>
+            </div>
           </div>
         </Container>
+      </div>
+      <div className="footer jost">
+        <b>&copy; </b>&nbsp;
+        {new Date().getFullYear()} &nbsp;
+        <i style={{ fontSize: "10px" }} className="fas fa-circle"></i> &nbsp;
+        House on The Hill
       </div>
     </>
   );
