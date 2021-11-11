@@ -21,7 +21,7 @@ a {
   div.nav {
     flex-direction: column;
     margin: 0px;
-    right: 20px;
+    right: 12px;
     left: unset;
     width: fit-content;
     height: 100px;

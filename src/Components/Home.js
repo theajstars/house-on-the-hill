@@ -11,7 +11,7 @@ import FridayPrayerImage from "../Assets/IMG/pray.jpg";
 import FullChurchLogo from "../Assets/IMG/Church-Logo-full.png";
 import AOS from "aos";
 
-import { ToastProvider, useToasts } from "react-toast-notifications";
+import { useToasts } from "react-toast-notifications";
 
 export default function Home() {
   const { addToast } = useToasts();
