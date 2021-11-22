@@ -1,6 +1,7 @@
 @import url("./Home.css");
 @import url("./fonts.css");
 @import url("./navbar.css");
+@import url("./footer.css");
 body {
   overflow-x: hidden;
   background-color: #fff;
@@ -18,4 +19,12 @@ body {
   font-weight: bold;
   font-size: 40px;
   color: #411357;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
 }
